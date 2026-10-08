@@ -1,0 +1,17 @@
+[package]
+name = "gray-lens"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.91"
+license = "MIT"
+description = "Post-edit diagnostics: run the right language checker on file tools and append findings to the tool result. Port of pi-lens (subset)."
+
+[[bin]]
+name = "gray-lens"
+path = "src/main.rs"
+
+[dependencies]
+serde_json = "1"
+
+[profile.release]
+strip = true
