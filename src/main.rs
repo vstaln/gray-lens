@@ -1,6 +1,6 @@
 //! gray-lens — post-edit diagnostics appended to file-tool results.
 //!
-//! Port of pi-lens (subset, MIT): after a write/edit-shaped file tool
+//! After a write/edit-shaped file tool
 //! succeeds, run the right checker for the file's language and append the
 //! findings to the tool result. `tool/after` carries no args, so
 //! `tool/before` stashes the target path per (session, tool) in memory.

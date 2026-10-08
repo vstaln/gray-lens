@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2024"
 rust-version = "1.91"
 license = "MIT"
-description = "Post-edit diagnostics: run the right language checker on file tools and append findings to the tool result. Port of pi-lens (subset)."
+description = "Post-edit diagnostics: run the right language checker on file tools and append findings to the tool result."
 
 [[bin]]
 name = "gray-lens"

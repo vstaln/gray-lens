@@ -1,10 +1,20 @@
-# gray-lens
+<p align="center">
+  <img src="assets/gray-logo.svg" alt="gray" width="96">
+</p>
+<h1 align="center">gray-lens</h1>
+<p align="center">Post-edit lint diagnostics, appended to the tool result the moment a write lands.</p>
+<p align="center">
+  <a href="https://github.com/vstaln/gray-lens/blob/main/LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
+  <img alt="gray plugin" src="https://img.shields.io/badge/gray-plugin-7aa2f7.svg">
+  <img alt="rust" src="https://img.shields.io/badge/built%20with-rust-orange.svg">
+</p>
 
 Post-edit diagnostics for file tools. After a write/edit-shaped tool call
 succeeds, gray-lens runs the right checker for the file's language and
-appends the findings to the tool result — the model sees problems the
-moment it makes them. Port of [pi-lens](https://www.npmjs.com/package/pi-lens)
-(MIT; the per-language checker subset).
+appends the findings to the tool result — the model sees problems the moment
+it makes them.
+
+A sidecar plugin for [gray](https://github.com/vstaln/gray).
 
 ## How it works
 
@@ -58,8 +68,13 @@ where `{file}` appears. `{"enabled": false}` disables a language.
 
 ## Install
 
-```
-gray plugin install ~/grayplugins/gray-lens
+```sh
+gray plugin install lens
 ```
 
 No capabilities to grant.
+
+---
+
+Part of the [gray](https://github.com/vstaln/gray) plugin ecosystem —
+the open-source AI agent harness. <https://gray.alignment.id>
