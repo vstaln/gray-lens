@@ -610,6 +610,7 @@ fn manifest() -> Value {
         "tools": [],
         "description": "run the right checker after each edit",
         "commands": ["/lens"],
+        "command_descriptions": {"/lens": "toggle post-edit language checkers"},
         "hooks": ["tool/before", "tool/after"],
     })
 }
